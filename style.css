@@ -1,0 +1,118 @@
+:root {
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+  font-family: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+body {
+  font: normal 1rem Arial, sans-serif;
+  text-align: center;
+}
+
+#main {
+  margin: 60px auto;
+  padding: 1.2rem;
+  width: 100%;
+}
+
+#main header {
+  padding-bottom: 1rem;
+}
+
+#main header h1 {
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+#main header p {
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #3dcb9e;
+}
+
+#main header svg {
+  width: 100px;
+  height: 100px;
+  margin: 1.2rem;
+}
+
+#main .inbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .8rem;
+
+  padding: .8rem;
+  margin-bottom: 1rem;
+}
+
+#main .inbox input, select {
+  padding: 1rem;
+  margin-bottom: 2rem;
+
+  width: 300px;
+
+  border: .8px solid;
+  border-radius: .5rem;
+  outline: none;
+}
+
+
+#main button {
+  padding: 1rem;
+  margin-bottom: 2rem;
+
+  width: 300px;
+
+  border: none;
+  border-radius: .5rem;
+  outline: none;
+
+  background: linear-gradient(to left, #8ee695df, #3dcb9e);
+}
+
+#main .output span {
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: #3dcb9e;
+}
+
+@media (min-width: 700px) {
+  header {
+    width: 500px;
+    margin: 0 auto;
+  }
+  #main header h1 {
+    font-size: 2.8rem;
+  }
+
+  #main header p {
+    font-size: 1.5rem;
+  }
+
+  #main .inbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #main .inbox input, select {
+    width: 245px;
+  }
+
+  #main button {
+    width: 500px;
+  }
+}
